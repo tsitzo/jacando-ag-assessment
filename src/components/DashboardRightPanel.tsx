@@ -2,7 +2,7 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 import { SevenDaysWeatherResponse } from "../types/apiResponse";
 import styles from "../css/DashboardRightPanel.module.scss";
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 import WeeklyForecastIcon from "./WeeklyForecastIcon";
 import ChartPanel from "./ChartPanel";
 
@@ -20,6 +20,7 @@ const DashboardRightPanel = () => {
         <div className={styles.root}>
           <div className={styles.topRow}>
             <p>Regional Weather Forecast</p>
+            {/* leaving this one here just to show the library I use */}
             {/* <p>{dayjs().format("D MMM YYYY")}</p> */}
             <p>
               {today.toLocaleDateString("en-GB", {

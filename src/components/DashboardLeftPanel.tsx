@@ -2,7 +2,7 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 import { DailyWeatherResponse } from "../types/apiResponse";
 import styles from "../css/DashboardLeftPanel.module.scss";
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 import { getWeatherIcon } from "../utils/getWeatherIcon";
 
 const DashboardLeftPanel = () => {
@@ -36,6 +36,7 @@ const DashboardLeftPanel = () => {
               <p className={styles.sublocationText}>Amalfi Coast, Italy</p>
             </div>
             <div className={styles.dateContainer}>
+              {/* leaving this one here just to show the library I use */}
               {/* <p>{dayjs().format("hh:mm A -  dddd D MMMM, YYYY")}</p> */}
               <p>
                 {today.toLocaleDateString("en-GB", {
