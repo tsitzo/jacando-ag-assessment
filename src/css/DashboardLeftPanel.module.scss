@@ -1,0 +1,78 @@
+@import "./variables";
+.root {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .topRow {
+    padding: $lgPadding;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    i {
+      font-size: 2em;
+    }
+  }
+
+  .bottomRow {
+    padding: $lgPadding;
+
+    .infoContainer {
+      margin-bottom: 4em;
+      .temperatureContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          font-size: 7em;
+        }
+
+        i {
+          font-size: 4em;
+          margin-right: 0.5em;
+        }
+      }
+
+      .locationText {
+        font-size: 3em;
+        font-weight: 600;
+      }
+
+      .sublocationText {
+        font-size: 1.5em;
+        color: #f5f5f584;
+      }
+    }
+
+    .dateContainer {
+      p {
+        margin-bottom: 1em;
+      }
+
+      .dateSectionsRow {
+        display: flex;
+        flex-direction: row;
+        div {
+          margin-right: 0.3em;
+          height: 0.3em;
+          width: 1em;
+          background-color: #f5f5f584;
+        }
+
+        div:nth-child(2) {
+          width: 2em;
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./variables";
+
+.root {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  i {
+    color: #f5f5f584;
+    font-size: $mdText;
+    margin-bottom: 0.5em;
+  }
+  .iconDayName {
+    font-weight: 700;
+    font-size: $smText;
+    margin-bottom: 1em;
+  }
+
+  .tempRangeText {
+    color: #f5f5f584;
+    font-size: $smText;
+  }
+}

@@ -1,0 +1,66 @@
+@import "./variables";
+.root {
+  .rightPanelTabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 100%;
+      text-align: center;
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      .activeText {
+        font-weight: 700;
+      }
+
+      .inactiveText {
+        font-weight: 0;
+      }
+
+      .active {
+        background-color: $text;
+        width: 100%;
+        height: 0.2em;
+      }
+
+      .inactive {
+        background-color: $subtext;
+        width: 100%;
+        height: 0.2em;
+      }
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .infoContainer {
+    padding: $lgPadding;
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: $lgText;
+        font-weight: 700;
+      }
+    }
+
+    .temperatureRow {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      align-items: center;
+      i {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}

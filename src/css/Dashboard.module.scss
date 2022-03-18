@@ -1,0 +1,28 @@
+@import "./variables";
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 3fr 2fr;
+  background-image: url("https://eskipaper.com/images/ocean-sunset-5.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+
+  .right {
+    background-color: $rightPanelBackground;
+    opacity: 0.9;
+  }
+}
+
+/*mobile styles*/
+
+@media screen and (max-width: 1010px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    display: none;
+  }
+}
